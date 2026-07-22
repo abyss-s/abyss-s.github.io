@@ -1,0 +1,25 @@
+# develop 푸시/PR 시 빌드 검증만 수행 — 배포는 deploy.yml(main 전용)에서만
+name: CI
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    name: Build check
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
