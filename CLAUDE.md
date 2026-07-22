@@ -37,6 +37,17 @@ draft: false
 - Future-dated posts are hidden until that time passes (see `scheduledPostMargin`).
 - `draft: true` hides a post from the site.
 
+## Blog Post Writing (IMPORTANT)
+
+When asked to write a blog post from troubleshooting notes or experiences:
+
+1. Follow `.claude/commands/write-til.md` — TIL-style debugging story, written entirely in Korean plain style (`~했다`).
+2. ALWAYS run the draft through `.claude/commands/humanize.md` afterward so the post does not read as AI-generated.
+3. ALWAYS check the result against `.claude/commands/post-standards.md` (title rules, content bar, voice, markdown pitfalls, image policy). This applies to migrated posts and edits too.
+4. Save the result to `src/content/posts/` with proper frontmatter. Never publish a draft that skips the humanize pass.
+
+These are also available as slash commands: `/write-til <notes>` and `/humanize <draft>`.
+
 ## Branch Policy
 
 - Work on `develop`; merge into `main` when ready to publish.
