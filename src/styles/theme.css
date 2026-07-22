@@ -15,20 +15,20 @@
 [data-theme="light"] {
   --background: #fdfdfd;
   --foreground: #282728;
-  --accent: #006cac;
+  --accent: #6f5fd0;
   --accent-foreground: #ffffff;
-  --muted: #e6e6e6;
+  --muted: #ecebf4;
   --muted-foreground: #6b7280;
-  --border: #ece9e9;
+  --border: #e6e4f0;
 }
 
 /* Dark theme values */
 [data-theme="dark"] {
-  --background: #212737;
+  --background: #1b1a24;
   --foreground: #eaedf3;
-  --accent: #ff6b01;
-  --accent-foreground: #ffffff;
-  --muted: #343f60;
-  --muted-foreground: #afb9ca;
-  --border: #ab4b08;
+  --accent: #b0a4f5;
+  --accent-foreground: #1b1a24;
+  --muted: #2c2a3d;
+  --muted-foreground: #9fa3b8;
+  --border: #34324a;
 }

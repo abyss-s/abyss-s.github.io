@@ -31,7 +31,7 @@ export default defineAstroPaperConfig({
   },
   socials: [
     { name: "github", url: "https://github.com/abyss-s" },
-    { name: "mail", url: "mailto:lh3729@gmail.com" },
+    { name: "mail", url: "mailto:lh3729@naver.com" },
   ],
   shareLinks: [
     { name: "x", url: "https://x.com/intent/post?url=" },
